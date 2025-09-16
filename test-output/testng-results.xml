@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-16T14:15:52 PDT" name="My Store regression suite" finished-at="2025-09-16T14:16:21 PDT" duration-ms="28347">
+    <groups>
+    </groups>
+    <test started-at="2025-09-16T14:15:52 PDT" name="My Tests" finished-at="2025-09-16T14:16:21 PDT" duration-ms="28347">
+      <class name="Tests.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:01 PDT" name="setUp" finished-at="2025-09-16T14:16:02 PDT" duration-ms="1316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userNameRequiredTest()[pri:1, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:02 PDT" name="userNameRequiredTest" finished-at="2025-09-16T14:16:05 PDT" duration-ms="2772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userNameRequiredTest -->
+        <test-method signature="emailRequiredTest()[pri:2, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:05 PDT" name="emailRequiredTest" finished-at="2025-09-16T14:16:06 PDT" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailRequiredTest -->
+        <test-method signature="passwordRequiredTest()[pri:3, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:10 PDT" name="passwordRequiredTest" finished-at="2025-09-16T14:16:11 PDT" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordRequiredTest -->
+        <test-method signature="privacyPolicyPageValidation()[pri:4, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:12 PDT" name="privacyPolicyPageValidation" finished-at="2025-09-16T14:16:13 PDT" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacyPolicyPageValidation -->
+        <test-method signature="doRegistrationTest()[pri:5, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:13 PDT" name="doRegistrationTest" finished-at="2025-09-16T14:16:16 PDT" duration-ms="2768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegistrationTest -->
+      </class> <!-- Tests.RegistrationPageTest -->
+      <class name="Tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:15:52 PDT" name="setUp" finished-at="2025-09-16T14:15:56 PDT" duration-ms="4058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homePageValidation()[pri:1, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:15:56 PDT" name="homePageValidation" finished-at="2025-09-16T14:15:56 PDT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageValidation -->
+        <test-method signature="navigateToLoginAndRegistrationPageTest()[pri:2, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:07 PDT" name="navigateToLoginAndRegistrationPageTest" finished-at="2025-09-16T14:16:08 PDT" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginAndRegistrationPageTest -->
+        <test-method signature="navigateToMacPageTest()[pri:3, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:09 PDT" name="navigateToMacPageTest" finished-at="2025-09-16T14:16:10 PDT" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToMacPageTest -->
+        <test-method signature="navigateToIPhonePageTest()[pri:4, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:12 PDT" name="navigateToIPhonePageTest" finished-at="2025-09-16T14:16:12 PDT" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToIPhonePageTest -->
+        <test-method signature="navigateToWatchPageTest()[pri:5, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:18 PDT" name="navigateToWatchPageTest" finished-at="2025-09-16T14:16:19 PDT" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWatchPageTest -->
+        <test-method signature="navigateToAccessoriesPageTest()[pri:6, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:20 PDT" name="navigateToAccessoriesPageTest" finished-at="2025-09-16T14:16:21 PDT" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAccessoriesPageTest -->
+      </class> <!-- Tests.HomePageTest -->
+      <class name="Tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:15:56 PDT" name="setUp" finished-at="2025-09-16T14:15:58 PDT" duration-ms="1377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithWrongUseNameAndPasswordTest()[pri:1, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:15:58 PDT" name="loginWithWrongUseNameAndPasswordTest" finished-at="2025-09-16T14:16:01 PDT" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongUseNameAndPasswordTest -->
+        <test-method signature="loginWithWrongPasswordTest()[pri:2, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:06 PDT" name="loginWithWrongPasswordTest" finished-at="2025-09-16T14:16:07 PDT" duration-ms="1352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPasswordTest -->
+        <test-method signature="loginUserNameRequiredTest()[pri:3, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:08 PDT" name="loginUserNameRequiredTest" finished-at="2025-09-16T14:16:09 PDT" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserNameRequiredTest -->
+        <test-method signature="loginPasswordRequiredTest()[pri:4, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:11 PDT" name="loginPasswordRequiredTest" finished-at="2025-09-16T14:16:12 PDT" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPasswordRequiredTest -->
+        <test-method signature="forgotPasswordTest()[pri:5, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:16 PDT" name="forgotPasswordTest" finished-at="2025-09-16T14:16:18 PDT" duration-ms="2259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordTest -->
+        <test-method signature="LoginTest()[pri:6, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:19 PDT" name="LoginTest" finished-at="2025-09-16T14:16:20 PDT" duration-ms="1478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+      </class> <!-- Tests.LoginPageTest -->
+    </test> <!-- My Tests -->
+  </suite> <!-- My Store regression suite -->
+</testng-results>
