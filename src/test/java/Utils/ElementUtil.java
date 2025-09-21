@@ -45,7 +45,15 @@ public class ElementUtil {
         return element.getText();
 
     }
-
+    public boolean doIsDisplayed(WebElement element) {
+        return element.isDisplayed();
+    }
+    public boolean doIsSelected(WebElement element) {
+        return element.isSelected();
+    }
+    public boolean doIsEnabled(WebElement element) {
+        return element.isEnabled();
+    }
 
 
     public void doClickByLinkText(String linkTextName){
@@ -89,9 +97,6 @@ public class ElementUtil {
     }
 
 
-    public boolean doIsDisplayed(WebElement element) {
-        return element.isDisplayed();
-    }
 
 
 
