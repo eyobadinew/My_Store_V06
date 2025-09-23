@@ -1,97 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="29" passed="29" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-16T14:15:52 PDT" name="My Store regression suite" finished-at="2025-09-16T14:16:21 PDT" duration-ms="28347">
+  <suite started-at="2025-09-23T10:34:56 PDT" name="My Store regression suite" finished-at="2025-09-23T10:36:27 PDT" duration-ms="91161">
     <groups>
     </groups>
-    <test started-at="2025-09-16T14:15:52 PDT" name="My Tests" finished-at="2025-09-16T14:16:21 PDT" duration-ms="28347">
-      <class name="Tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:01 PDT" name="setUp" finished-at="2025-09-16T14:16:02 PDT" duration-ms="1316" status="PASS">
+    <test started-at="2025-09-23T10:34:56 PDT" name="My Tests" finished-at="2025-09-23T10:36:27 PDT" duration-ms="91161">
+      <class name="Tests.IPhonePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.IPhonePageTest@24aed80c]" started-at="2025-09-23T10:35:22 PDT" name="setUp" finished-at="2025-09-23T10:35:23 PDT" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userNameRequiredTest()[pri:1, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:02 PDT" name="userNameRequiredTest" finished-at="2025-09-16T14:16:05 PDT" duration-ms="2772" status="PASS">
+        <test-method signature="doIPhoneAddToCartTest()[pri:0, instance:Tests.IPhonePageTest@24aed80c]" started-at="2025-09-23T10:35:23 PDT" name="doIPhoneAddToCartTest" finished-at="2025-09-23T10:35:27 PDT" duration-ms="3921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doIPhoneAddToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.IPhonePageTest@24aed80c]" started-at="2025-09-23T10:35:27 PDT" name="tearDown" finished-at="2025-09-23T10:35:27 PDT" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.IPhonePageTest -->
+      <class name="Tests.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:35:37 PDT" name="setUp" finished-at="2025-09-23T10:35:39 PDT" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userNameRequiredTest()[pri:1, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:35:39 PDT" name="userNameRequiredTest" finished-at="2025-09-23T10:35:41 PDT" duration-ms="1937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userNameRequiredTest -->
-        <test-method signature="emailRequiredTest()[pri:2, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:05 PDT" name="emailRequiredTest" finished-at="2025-09-16T14:16:06 PDT" duration-ms="997" status="PASS">
+        <test-method signature="emailRequiredTest()[pri:2, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:35:53 PDT" name="emailRequiredTest" finished-at="2025-09-23T10:35:55 PDT" duration-ms="1924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailRequiredTest -->
-        <test-method signature="passwordRequiredTest()[pri:3, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:10 PDT" name="passwordRequiredTest" finished-at="2025-09-16T14:16:11 PDT" duration-ms="1135" status="PASS">
+        <test-method signature="passwordRequiredTest()[pri:3, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:36:04 PDT" name="passwordRequiredTest" finished-at="2025-09-23T10:36:06 PDT" duration-ms="1231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordRequiredTest -->
-        <test-method signature="privacyPolicyPageValidation()[pri:4, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:12 PDT" name="privacyPolicyPageValidation" finished-at="2025-09-16T14:16:13 PDT" duration-ms="612" status="PASS">
+        <test-method signature="privacyPolicyPageValidation()[pri:4, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:36:07 PDT" name="privacyPolicyPageValidation" finished-at="2025-09-23T10:36:08 PDT" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- privacyPolicyPageValidation -->
-        <test-method signature="doRegistrationTest()[pri:5, instance:Tests.RegistrationPageTest@4c402120]" started-at="2025-09-16T14:16:13 PDT" name="doRegistrationTest" finished-at="2025-09-16T14:16:16 PDT" duration-ms="2768" status="PASS">
+        <test-method signature="doRegistrationTest()[pri:5, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:36:08 PDT" name="doRegistrationTest" finished-at="2025-09-23T10:36:10 PDT" duration-ms="1991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.RegistrationPageTest@6a6cb05c]" started-at="2025-09-23T10:36:10 PDT" name="tearDown" finished-at="2025-09-23T10:36:10 PDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Tests.RegistrationPageTest -->
-      <class name="Tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:15:52 PDT" name="setUp" finished-at="2025-09-16T14:15:56 PDT" duration-ms="4058" status="PASS">
+      <class name="Tests.DashboardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.DashboardPageTest@15de0b3c]" started-at="2025-09-23T10:35:48 PDT" name="setUp" finished-at="2025-09-23T10:35:50 PDT" duration-ms="2375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="homePageValidation()[pri:1, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:15:56 PDT" name="homePageValidation" finished-at="2025-09-16T14:15:56 PDT" duration-ms="11" status="PASS">
+        <test-method signature="validateDashboardPage()[pri:1, instance:Tests.DashboardPageTest@15de0b3c]" started-at="2025-09-23T10:35:50 PDT" name="validateDashboardPage" finished-at="2025-09-23T10:35:53 PDT" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDashboardPage -->
+        <test-method signature="navigateToAccountDetailsPage()[pri:2, instance:Tests.DashboardPageTest@15de0b3c]" started-at="2025-09-23T10:35:56 PDT" name="navigateToAccountDetailsPage" finished-at="2025-09-23T10:35:58 PDT" duration-ms="2208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAccountDetailsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.DashboardPageTest@15de0b3c]" started-at="2025-09-23T10:35:58 PDT" name="tearDown" finished-at="2025-09-23T10:35:59 PDT" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.DashboardPageTest -->
+      <class name="Tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:35:32 PDT" name="setUp" finished-at="2025-09-23T10:35:33 PDT" duration-ms="1767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homePageValidation()[pri:1, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:35:33 PDT" name="homePageValidation" finished-at="2025-09-23T10:35:33 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageValidation -->
-        <test-method signature="navigateToLoginAndRegistrationPageTest()[pri:2, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:07 PDT" name="navigateToLoginAndRegistrationPageTest" finished-at="2025-09-16T14:16:08 PDT" duration-ms="856" status="PASS">
+        <test-method signature="navigateToLoginAndRegistrationPageTest()[pri:2, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:35:59 PDT" name="navigateToLoginAndRegistrationPageTest" finished-at="2025-09-23T10:35:59 PDT" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToLoginAndRegistrationPageTest -->
-        <test-method signature="navigateToMacPageTest()[pri:3, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:09 PDT" name="navigateToMacPageTest" finished-at="2025-09-16T14:16:10 PDT" duration-ms="470" status="PASS">
+        <test-method signature="navigateToMacPageTest()[pri:3, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:36:04 PDT" name="navigateToMacPageTest" finished-at="2025-09-23T10:36:04 PDT" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToMacPageTest -->
-        <test-method signature="navigateToIPhonePageTest()[pri:4, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:12 PDT" name="navigateToIPhonePageTest" finished-at="2025-09-16T14:16:12 PDT" duration-ms="569" status="PASS">
+        <test-method signature="navigateToIPhonePageTest()[pri:4, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:36:07 PDT" name="navigateToIPhonePageTest" finished-at="2025-09-23T10:36:07 PDT" duration-ms="541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToIPhonePageTest -->
-        <test-method signature="navigateToWatchPageTest()[pri:5, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:18 PDT" name="navigateToWatchPageTest" finished-at="2025-09-16T14:16:19 PDT" duration-ms="674" status="PASS">
+        <test-method signature="navigateToWatchPageTest()[pri:5, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:36:12 PDT" name="navigateToWatchPageTest" finished-at="2025-09-23T10:36:13 PDT" duration-ms="717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToWatchPageTest -->
-        <test-method signature="navigateToAccessoriesPageTest()[pri:6, instance:Tests.HomePageTest@38425407]" started-at="2025-09-16T14:16:20 PDT" name="navigateToAccessoriesPageTest" finished-at="2025-09-16T14:16:21 PDT" duration-ms="510" status="PASS">
+        <test-method signature="navigateToAccessoriesPageTest()[pri:6, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:36:16 PDT" name="navigateToAccessoriesPageTest" finished-at="2025-09-23T10:36:16 PDT" duration-ms="650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAccessoriesPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@51399530]" started-at="2025-09-23T10:36:16 PDT" name="tearDown" finished-at="2025-09-23T10:36:17 PDT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Tests.HomePageTest -->
       <class name="Tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:15:56 PDT" name="setUp" finished-at="2025-09-16T14:15:58 PDT" duration-ms="1377" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:35:33 PDT" name="setUp" finished-at="2025-09-23T10:35:36 PDT" duration-ms="2354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithWrongUseNameAndPasswordTest()[pri:1, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:15:58 PDT" name="loginWithWrongUseNameAndPasswordTest" finished-at="2025-09-16T14:16:01 PDT" duration-ms="2781" status="PASS">
+        <test-method signature="loginWithWrongUseNameAndPasswordTest()[pri:1, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:35:36 PDT" name="loginWithWrongUseNameAndPasswordTest" finished-at="2025-09-23T10:35:37 PDT" duration-ms="1261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithWrongUseNameAndPasswordTest -->
-        <test-method signature="loginWithWrongPasswordTest()[pri:2, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:06 PDT" name="loginWithWrongPasswordTest" finished-at="2025-09-16T14:16:07 PDT" duration-ms="1352" status="PASS">
+        <test-method signature="loginWithWrongPasswordTest()[pri:2, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:35:55 PDT" name="loginWithWrongPasswordTest" finished-at="2025-09-23T10:35:56 PDT" duration-ms="1193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithWrongPasswordTest -->
-        <test-method signature="loginUserNameRequiredTest()[pri:3, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:08 PDT" name="loginUserNameRequiredTest" finished-at="2025-09-16T14:16:09 PDT" duration-ms="1214" status="PASS">
+        <test-method signature="loginUserNameRequiredTest()[pri:3, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:03 PDT" name="loginUserNameRequiredTest" finished-at="2025-09-23T10:36:04 PDT" duration-ms="1168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUserNameRequiredTest -->
-        <test-method signature="loginPasswordRequiredTest()[pri:4, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:11 PDT" name="loginPasswordRequiredTest" finished-at="2025-09-16T14:16:12 PDT" duration-ms="1109" status="PASS">
+        <test-method signature="loginPasswordRequiredTest()[pri:4, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:06 PDT" name="loginPasswordRequiredTest" finished-at="2025-09-23T10:36:07 PDT" duration-ms="1008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPasswordRequiredTest -->
-        <test-method signature="forgotPasswordTest()[pri:5, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:16 PDT" name="forgotPasswordTest" finished-at="2025-09-16T14:16:18 PDT" duration-ms="2259" status="PASS">
+        <test-method signature="forgotPasswordTest()[pri:5, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:10 PDT" name="forgotPasswordTest" finished-at="2025-09-23T10:36:12 PDT" duration-ms="2284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPasswordTest -->
-        <test-method signature="LoginTest()[pri:6, instance:Tests.LoginPageTest@557caf28]" started-at="2025-09-16T14:16:19 PDT" name="LoginTest" finished-at="2025-09-16T14:16:20 PDT" duration-ms="1478" status="PASS">
+        <test-method signature="doLoginTest()[pri:6, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:13 PDT" name="doLoginTest" finished-at="2025-09-23T10:36:16 PDT" duration-ms="2908" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
+        </test-method> <!-- doLoginTest -->
+        <test-method signature="navigateToAccountDetailsPageTest()[pri:7, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:17 PDT" name="navigateToAccountDetailsPageTest" finished-at="2025-09-23T10:36:20 PDT" duration-ms="3400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAccountDetailsPageTest -->
+        <test-method signature="navigateToAddProductPageTest()[pri:8, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:20 PDT" name="navigateToAddProductPageTest" finished-at="2025-09-23T10:36:24 PDT" duration-ms="3788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAddProductPageTest -->
+        <test-method signature="doLogoutTest()[pri:9, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:24 PDT" name="doLogoutTest" finished-at="2025-09-23T10:36:27 PDT" duration-ms="3201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@6c6cb480]" started-at="2025-09-23T10:36:27 PDT" name="tearDown" finished-at="2025-09-23T10:36:27 PDT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Tests.LoginPageTest -->
+      <class name="Tests.CheckoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CheckoutPageTest@1e800aaa]" started-at="2025-09-23T10:35:05 PDT" name="setUp" finished-at="2025-09-23T10:35:06 PDT" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doCheckoutTest()[pri:0, instance:Tests.CheckoutPageTest@1e800aaa]" started-at="2025-09-23T10:35:06 PDT" name="doCheckoutTest" finished-at="2025-09-23T10:35:13 PDT" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCheckoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CheckoutPageTest@1e800aaa]" started-at="2025-09-23T10:35:13 PDT" name="tearDown" finished-at="2025-09-23T10:35:13 PDT" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CheckoutPageTest -->
+      <class name="Tests.WatchPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.WatchPageTest@7817fd62]" started-at="2025-09-23T10:35:27 PDT" name="setUp" finished-at="2025-09-23T10:35:29 PDT" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doWatchAddToCartTest()[pri:0, instance:Tests.WatchPageTest@7817fd62]" started-at="2025-09-23T10:35:29 PDT" name="doWatchAddToCartTest" finished-at="2025-09-23T10:35:32 PDT" duration-ms="2777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doWatchAddToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WatchPageTest@7817fd62]" started-at="2025-09-23T10:35:32 PDT" name="tearDown" finished-at="2025-09-23T10:35:32 PDT" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.WatchPageTest -->
+      <class name="Tests.CartPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartPageTest@682b2fa]" started-at="2025-09-23T10:35:41 PDT" name="setUp" finished-at="2025-09-23T10:35:42 PDT" duration-ms="1683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateCartPage()[pri:1, instance:Tests.CartPageTest@682b2fa]" started-at="2025-09-23T10:35:42 PDT" name="validateCartPage" finished-at="2025-09-23T10:35:48 PDT" duration-ms="5466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartPage -->
+        <test-method signature="selectedProductIsDisplayedInCartTest()[pri:2, instance:Tests.CartPageTest@682b2fa]" started-at="2025-09-23T10:35:59 PDT" name="selectedProductIsDisplayedInCartTest" finished-at="2025-09-23T10:36:03 PDT" duration-ms="3357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectedProductIsDisplayedInCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartPageTest@682b2fa]" started-at="2025-09-23T10:36:03 PDT" name="tearDown" finished-at="2025-09-23T10:36:03 PDT" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CartPageTest -->
+      <class name="Tests.EndToEndTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.EndToEndTest@3d285d7e]" started-at="2025-09-23T10:35:13 PDT" name="setUp" finished-at="2025-09-23T10:35:14 PDT" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doEndToEndTest()[pri:0, instance:Tests.EndToEndTest@3d285d7e]" started-at="2025-09-23T10:35:14 PDT" name="doEndToEndTest" finished-at="2025-09-23T10:35:22 PDT" duration-ms="7120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doEndToEndTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.EndToEndTest@3d285d7e]" started-at="2025-09-23T10:35:22 PDT" name="tearDown" finished-at="2025-09-23T10:35:22 PDT" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.EndToEndTest -->
+      <class name="Tests.AddProductPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AddProductPageTest@1573f9fc]" started-at="2025-09-23T10:34:56 PDT" name="setUp" finished-at="2025-09-23T10:35:00 PDT" duration-ms="4184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProductTest()[pri:0, instance:Tests.AddProductPageTest@1573f9fc]" started-at="2025-09-23T10:35:00 PDT" name="addProductTest" finished-at="2025-09-23T10:35:05 PDT" duration-ms="4905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AddProductPageTest@1573f9fc]" started-at="2025-09-23T10:35:05 PDT" name="tearDown" finished-at="2025-09-23T10:35:05 PDT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AddProductPageTest -->
     </test> <!-- My Tests -->
   </suite> <!-- My Store regression suite -->
 </testng-results>

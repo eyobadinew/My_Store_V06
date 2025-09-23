@@ -14,6 +14,12 @@ public class Constants {
     public static final String WATCH_PAGE_TITLE = "Watch; e-commerce";
     public static final String ACCESSORIES_PAGE_TITLE = "Accessories; e-commerce";
     public static final String PRIVACY_POLICY_PAGE_TITLE = "Privacy Policy; e-commerce";
+    public static final String ADD_PRODUCT_PAGE_TITLE = "Add product; e-commerce";
+    public static final String CART_PAGE_TITLE = "Cart; e-commerce";
+    public static final String CHECKOUT_PAGE_TITLE = "Checkout; e-commerce";
+
+
+
 
     public static final String ACCOUNTS_PAGE_HEADER = "Your Store";
     public static final int ACCOUNT_SECTIONS = 4;
