@@ -15,6 +15,7 @@ import org.testng.asserts.SoftAssert;
 import java.util.Properties;
 
 import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
 
 public class LoginPageTest extends BaseTest {
@@ -24,13 +25,14 @@ public class LoginPageTest extends BaseTest {
 
 
     @Test(priority = 6)
-    public void LoginTest() {
+    public void doLoginTest() {
         homePage = new HomePage(driver, wait);
         homePage.hitMyAccountLink();
         loginPage = new LoginPage(driver, wait);
         loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
         assertEquals(Constants.LOGIN_PAGE_TITLE, "My account; e-commerce");
         assertTrue(loginPage.loginSuccessMessage().contains("Nice to see you."));
+        loginPage.doLogout();
     }
 
     // Login with wrong username and password
@@ -102,5 +104,41 @@ public class LoginPageTest extends BaseTest {
 
     }
 
+     @Test(priority=9)
+    public void doLogoutTest(){
+         homePage = new HomePage(driver, wait);
+         homePage.hitMyAccountLink();
+         loginPage = new LoginPage(driver, wait);
+         loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+         assertEquals(Constants.LOGIN_PAGE_TITLE, "My account; e-commerce");
+         loginPage.doLogout();
+         assertEquals(loginPage.loginPageHeaderText(),"My account");
+     }
+
+     @Test(priority=7)
+    public void navigateToAccountDetailsPageTest(){
+         homePage = new HomePage(driver, wait);
+         homePage.hitMyAccountLink();
+         loginPage = new LoginPage(driver, wait);
+         loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+         loginPage.hitAccountDetailsLink();
+         assertEquals(loginPage.accountDetailsHeaderText(),"Account details");
+         loginPage.doLogout();
+     }
+
+    @Test(priority=8)
+    public void navigateToAddProductPageTest()  {
+        homePage = new HomePage(driver, wait);
+        homePage.hitMyAccountLink();
+        loginPage = new LoginPage(driver, wait);
+
+        loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+        loginPage.hitAddProductButton();
+        assertEquals(Constants.ADD_PRODUCT_PAGE_TITLE, "Add product; e-commerce");
+        driver.navigate().back();
+        loginPage.doLogout();
+
+
+    }
 
 }

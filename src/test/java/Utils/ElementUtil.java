@@ -62,6 +62,27 @@ public class ElementUtil {
      }
 
 
+     // *** Java Script Executor utils
+
+   public void javaScriptExecutorDoSendKeys(WebElement element, String text){
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value= '" + text + "';", element);
+    }
+
+
+    public void javaScriptExecutorDoClick(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", element);}
+
+
+
+
+
+
+
+
+
+
     // ***************************Drop Down Utils
     // ***********************************
 

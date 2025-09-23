@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -30,14 +31,20 @@ private ElementUtil elementUtil;
     @FindBy(xpath="//ul[@id='menu-main']//a")
     private List<WebElement> productCategories;
 
+    @FindBy(xpath="//li[@id='menu-item-15']")
+    List<WebElement> allProductCategories;
+
   /*  @FindBy(xpath="//div[@class='col-full']//div[1]//form[1]//select[1]")
     private WebElement sortingDropDowns;
 */
     public void hitMyAccountLink(){
-        elementUtil.doClick(myAccountLink);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(myAccountLink)));
+        elementUtil.javaScriptExecutorDoClick(myAccountLink);
     }
 
     public void hitProductLink(String product){
+
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(allProductCategories)));
         elementUtil.doClickByLinkText(product);
     }
 

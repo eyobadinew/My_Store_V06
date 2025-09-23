@@ -25,7 +25,7 @@ public class LoginPage {
     private WebElement userName;
     @FindBy(xpath = "//input[@id='password']")
     private WebElement password;
-    @FindBy(xpath = " //button[normalize-space()='Log in']")
+    @FindBy(xpath = "//button[normalize-space()='Log in']")
     private WebElement loginButton;
     @FindBy(how = How.CSS, using = "li[id='menu-item-77'] a")
     WebElement myAccountLink;
@@ -73,11 +73,26 @@ public class LoginPage {
     private WebElement forgotPasswordEmailField;
 
 
+    @FindBy(xpath="//a[normalize-space()='Account details']")
+    private WebElement accountDetailsLink;
+
+    @FindBy(xpath="//h1[normalize-space()='Account details']")
+    private WebElement accountDetailsHeader;
+
+    @FindBy(xpath="//a[@class='btn']")
+    private WebElement addProductButton;
+
+
+
     public void doLogin(String un, String pw) {
 
-        elementUtil.doSendKeys(userName, un);
-        elementUtil.doSendKeys(password, pw);
-        elementUtil.doClick(loginButton);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(loginButton)));
+
+        elementUtil.javaScriptExecutorDoSendKeys(userName,un);
+        elementUtil.javaScriptExecutorDoSendKeys(password,pw);
+
+        elementUtil.javaScriptExecutorDoClick(loginButton);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(loginMessage)));
 
     }
 
@@ -131,4 +146,27 @@ public class LoginPage {
     public void enterForgotPasswordEmail(String un) {
         elementUtil.doSendKeys(forgotPasswordEmailField, un);
     }
+
+   public void doLogout(){
+       wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(logoutButton)));
+        elementUtil.doClick(logoutButton);
+   }
+   public String loginPageHeaderText(){
+        return elementUtil.doGetText(loginPageHeader);
+   }
+
+
+
+   public void hitAccountDetailsLink(){
+        elementUtil.doClick(accountDetailsLink);
+   }
+
+   public String accountDetailsHeaderText(){
+       return elementUtil.doGetText(accountDetailsHeader);
+   }
+
+   public void hitAddProductButton(){
+        elementUtil.doClick(addProductButton);
+   }
 }
+

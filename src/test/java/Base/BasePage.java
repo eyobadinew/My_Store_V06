@@ -58,7 +58,8 @@ public class BasePage {
         else {System.out.println("The browser is "+browserName);
         }
         driver.manage().deleteAllCookies();
-     //   driver.manage().window().fullscreen();
+      //  driver.manage().window().fullscreen();
+          driver.manage().window().maximize();;
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 
